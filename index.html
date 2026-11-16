@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Расписание лабораторий — Технологическая лаборатория</title>
+<style>
+  :root {
+    --bg: #ffffff; --ink: #1c1e21; --muted: #5b6b7f;
+    --accent: #4472c4; --accent-soft: #e8f1fb;
+    --green: #167a4d; --green-soft: #e7f4ee;
+    --line: #e0e5eb;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .page { max-width: 1200px; margin: 0 auto; padding: 1.8rem 1rem 2.5rem; }
+  .page:first-of-type { border-bottom: 2px solid var(--accent); margin-bottom: 2.5rem; }
+  h1 { font-size: 1.35rem; margin: 0 0 .15rem; line-height: 1.3; }
+  h1 small { color: var(--muted); font-weight: 400; font-size: .9rem; display: block; margin-top: .15rem; }
+  .sub { color: var(--muted); font-size: .88rem; margin: 0 0 .85rem; }
+  .links { background: var(--accent-soft); border-radius: 10px; padding: .7rem .9rem; margin: .8rem 0 1.2rem; font-size: .88rem; }
+  .links a { color: var(--accent); font-weight: 600; word-break: break-all; }
+  .links b { color: var(--accent); }
+  .table-scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: .87rem; min-width: 780px; }
+  th, td { padding: .5rem .55rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  th { background: var(--accent); color: #fff; font-weight: 700; font-size: .82rem; white-space: nowrap; }
+  td.num { text-align: center; white-space: nowrap; width: 40px; font-weight: 600; color: var(--accent); }
+  td.time { white-space: nowrap; }
+  td.room { font-family: ui-monospace, monospace; font-size: .84rem; }
+  td.hours { text-align: center; white-space: nowrap; font-weight: 600; width: 70px; }
+  .teacher { font-weight: 600; }
+  .badge { display: inline-block; font-size: .7rem; font-weight: 700; padding: .12rem .45rem; border-radius: 999px;
+           background: var(--accent-soft); color: var(--accent); margin-right: .25rem; white-space: nowrap; }
+  .badge-green { background: var(--green-soft); color: var(--green); }
+  footer { color: var(--muted); font-size: .78rem; border-top: 1px solid var(--line); margin-top: 1.5rem; padding-top: .6rem; }
+  @media print {
+    .page { max-width: none; padding: 0; }
+    table { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page" id="sputnik">
+  <h1>Региональный центр «Спутник» — Технологическая лаборатория</h1>
+  <p class="sub">Расписание лабораторий · 2026–2027 учебный год</p>
+
+  <div class="links">
+    <b>Запись на программу:</b><br>
+    • Региональный навигатор дополнительного образования Красноярского края: <a href="https://navigator.krao.ru/program/48647-tekhnologicheskaya-laboratoriya" target="_blank">navigator.krao.ru/program/48647-tekhnologicheskaya-laboratoriya</a><br>
+    • Сайт регионального центра «Спутник»: <a href="https://sputnik.cosmoschool.ru/events/459" target="_blank">sputnik.cosmoschool.ru/events/459</a><br>
+    • Общий чат Технологической лаборатории в MAX: <a href="https://max.ru/join/lOdjjixPlEqczybnR-ehqKWYylUG3qYlobozEUMTw3k" target="_blank">присоединиться</a>
+  </div>
+
+  <div class="table-scroll">
+  <table>
+    <thead>
+      <tr>
+        <th>№</th>
+        <th>Наименование лаборатории</th>
+        <th>Преподаватель</th>
+        <th>День недели</th>
+        <th>Время</th>
+        <th>Кабинет</th>
+        <th>Кол-во часов</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="num">1</td>
+        <td><b>Инициативная робототехника</b></td>
+        <td class="teacher">Кириллов К.Ю.</td>
+        <td>Суббота</td>
+        <td class="time">11:30–15:30</td>
+        <td class="room">204л</td>
+        <td class="hours">4</td>
+      </tr>
+      <tr>
+        <td class="num">2</td>
+        <td><b>Инициативная электроника</b></td>
+        <td class="teacher">Кондратьев В.В.</td>
+        <td>Суббота</td>
+        <td class="time">11:30–13:30</td>
+        <td class="room">203л</td>
+        <td class="hours">2</td>
+      </tr>
+      <tr>
+        <td class="num">3</td>
+        <td><b>Беспилотные авиационные системы</b></td>
+        <td class="teacher">Мороз Е.Е.</td>
+        <td>Суббота</td>
+        <td class="time">11:30–13:30</td>
+        <td class="room">БАС</td>
+        <td class="hours">2</td>
+      </tr>
+      <tr>
+        <td class="num">4</td>
+        <td><b>Инициативное моделирование — Blender 3D и КОМПАС-3D</b></td>
+        <td class="teacher">Чистов Д.В.</td>
+        <td>Суббота</td>
+        <td class="time">12:00–20:00</td>
+        <td class="room">301</td>
+        <td class="hours">8</td>
+      </tr>
+      <tr>
+        <td class="num">5</td>
+        <td><b>Проектная деятельность</b><br><a class="maxlink" href="https://max.ru/join/UoYomxcT7aDJ7e11ppkACACzmhpRlLTZGQpnwWa3bc8" target="_blank">чат проекта в MAX</a></td>
+        <td class="teacher">Казакевич К.М.</td>
+        <td>Суббота</td>
+        <td class="time">11:30–15:30</td>
+        <td class="room">301</td>
+        <td class="hours">4</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="page" id="shk">
+  <h1>Школа космонавтики — программы технической направленности</h1>
+  <p class="sub">Расписание лабораторий · 2026–2027 учебный год</p>
+
+  <div class="table-scroll">
+  <table>
+    <thead>
+      <tr>
+        <th>№</th>
+        <th>Наименование лаборатории</th>
+        <th>Преподаватель</th>
+        <th>Дни недели</th>
+        <th>Время</th>
+        <th>Кабинет</th>
+        <th>Кол-во часов</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="num">1</td>
+        <td><b>Искусственный интеллект</b></td>
+        <td class="teacher">Становов В.В.</td>
+        <td>Пятница</td>
+        <td class="time">16:00–20:00</td>
+        <td class="room">203Л / 204Л</td>
+        <td class="hours">8</td>
+      </tr>
+      <tr>
+        <td class="num">2</td>
+        <td><b>Искусственная и дополненная реальность (VR)</b></td>
+        <td class="teacher">Казакевич К.М.</td>
+        <td>Вторник, четверг</td>
+        <td class="time">16:00–20:00</td>
+        <td class="room">301 / 302</td>
+        <td class="hours">8</td>
+      </tr>
+      <tr>
+        <td class="num">3</td>
+        <td><b>Робототехника (Лига Технологий, Python)</b></td>
+        <td class="teacher">Поздняков А.В.</td>
+        <td>Понедельник<br>Суббота</td>
+        <td class="time">16:00–18:30<br>15:00–17:30</td>
+        <td class="room">307 / мастерская<br>307 / мастерская</td>
+        <td class="hours">2,5<br>2,5</td>
+      </tr>
+      <tr>
+        <td class="num">4</td>
+        <td><b>Робототехника (микроконтроллеры, программирование C++)</b></td>
+        <td class="teacher">Кондратьев В.В.</td>
+        <td>Вторник</td>
+        <td class="time">16:00–18:00</td>
+        <td class="room">307 / мастерская</td>
+        <td class="hours">2</td>
+      </tr>
+      <tr>
+        <td class="num">5</td>
+        <td><b>Робототехника (НТО, ROS 2)</b></td>
+        <td class="teacher">Кириллов К.Ю.</td>
+        <td>Среда</td>
+        <td class="time">16:00–18:00</td>
+        <td class="room">307</td>
+        <td class="hours">2</td>
+      </tr>
+      <tr>
+        <td class="num">6</td>
+        <td><b>Олимпиадное программирование</b></td>
+        <td class="teacher">Кондратьев В.В.</td>
+        <td>Четверг</td>
+        <td class="time">16:00–20:00</td>
+        <td class="room">307</td>
+        <td class="hours">4</td>
+      </tr>
+      <tr>
+        <td class="num">7</td>
+        <td><b>Информационная безопасность</b></td>
+        <td class="teacher">Кириллов К.Ю.</td>
+        <td>Среда<br>Суббота</td>
+        <td class="time">18:00–20:00<br>14:00–16:00</td>
+        <td class="room">307<br>203Л / 204Л</td>
+        <td class="hours">2<br>2</td>
+      </tr>
+      <tr>
+        <td class="num">8</td>
+        <td><b>Беспилотные авиационные системы</b></td>
+        <td class="teacher">Мороз Е.Е.</td>
+        <td>Вторник, четверг</td>
+        <td class="time">16:00–20:00</td>
+        <td class="room">БАС</td>
+        <td class="hours">8</td>
+      </tr>
+      <tr>
+        <td class="num">9</td>
+        <td><b>Аддитивные технологии (КОМПАС-3D / Blender 3D)</b></td>
+        <td class="teacher">Чистов Д.В.</td>
+        <td>Вторник, четверг, суббота</td>
+        <td class="time">16:00–20:00</td>
+        <td class="room">301 / 302</td>
+        <td class="hours">12</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+<hr>
+  <h2 style="font-size:1.1rem; margin:1.5rem 0 .6rem;">Содержание и результаты лабораторий</h2>
+  <div class="table-scroll">
+  <table class="detail-table">
+    <thead>
+      <tr><th>Лаборатория</th><th>Изучаемые темы</th><th>Создаваемый продукт</th><th>Конкурсы и ссылки</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><b>Робототехника</b></td><td>Конструирование колёсных и гусеничных платформ, передаточные числа, центр тяжести; модульные конструкторы Лиги Технологий; сенсоры (касания, цвета, ультразвуковой, гироскоп); программирование в EV3 Classroom и EV3-G; ПИД-регулятор для движения по линии; тактика соревнований на полигоне</td><td>Автономный робот для соревнования (траектория, кегельринг, сумо, эстафета)</td><td><a href="https://ntcontest.ru" target="_blank">ntcontest.ru</a> · <a href="https://bigchallenges.ru" target="_blank">bigchallenges.ru</a> · <a href="https://ligarobotov.ru" target="_blank">ligarobotov.ru</a> · <a href="https://robofinist.ru" target="_blank">robofinist.ru</a> · ВсОШ по технологии</td></tr>
+      <tr><td><b>Электроника</b></td><td>Закон Ома, резисторы, конденсаторы, транзисторы, диоды; чтение принципиальных схем по ГОСТ 2.721; микроконтроллеры AVR и ESP32; программирование на C/C++ (GPIO, ШИМ, АЦП, прерывания); протоколы UART, I2C, SPI; драйверы двигателей и датчики; пайка и макетирование</td><td>Работающее электронное устройство с микроконтроллером и датчиками</td><td><a href="https://ntcontest.ru" target="_blank">ntcontest.ru</a> · <a href="https://bigchallenges.ru" target="_blank">bigchallenges.ru</a> · НПК «Инженерные кадры России» · ВсОШ по технологии</td></tr>
+      <tr><td><b>Blender 3D</b></td><td>Интерфейс Blender 4.x; трансформации, меш-моделирование; модификаторы, булевы операции, работа с кривыми; материалы, освещение, рендер; подготовка модели к 3D-печати</td><td>Трёхмерная модель и напечатанный на 3D-принтере физический объект</td><td><a href="https://bigchallenges.ru" target="_blank">bigchallenges.ru</a> · <a href="https://ntcontest.ru" target="_blank">ntcontest.ru</a> · JuniorSkills 3D-моделирование</td></tr>
+      <tr><td><b>КОМПАС-3D</b></td><td>Стандарты ЕСКД: форматы, линии, виды, разрезы по ГОСТ 2; эскизы, выдавливание, вращение, булевы операции; параметрическое 3D-моделирование, сборки, спецификации; подготовка конструкторской документации</td><td>Комплект конструкторской документации по ЕСКД и напечатанная/обработанная деталь</td><td><a href="https://bigchallenges.ru" target="_blank">bigchallenges.ru</a> · <a href="https://ntcontest.ru" target="_blank">ntcontest.ru</a> · JuniorSkills CAD/CAM</td></tr>
+      <tr><td><b>Беспилотные авиационные системы</b></td><td>Конструкция квадрокоптера, прошивка (Betaflight), калибровка; ручное пилотирование на симуляторе и в реальных условиях; автономные полёты, навигация, программирование сценариев; основы аэросъёмки</td><td>Уверенное пилотирование БПЛА «Геоскан» и «Пионер»; программирование автономных полётных сценариев</td><td><a href="https://geoscan.aero" target="_blank">geoscan.aero</a> · <a href="https://bigchallenges.ru" target="_blank">bigchallenges.ru</a> · <a href="https://ntcontest.ru" target="_blank">ntcontest.ru</a> (трек АТС)</td></tr>
+      <tr><td><b>VR-разработка<br>(Unity)</b></td><td>Unity: сцены, GameObjects, компоненты, физика; язык C#: переменные, методы, события; XR Interaction Toolkit: захват, телепортация, пространственный UI; сборка APK для Pico 4 Ultra</td><td>VR-приложение, запущенное на шлеме Pico 4 Ultra (публичная демонстрация)</td><td><a href="https://bigchallenges.ru" target="_blank">bigchallenges.ru</a> · VR-хакатоны · Цифровой прорыв</td></tr>
+      <tr><td><b>Проектная деятельность</b></td><td>SMART-целеполагание, паспорт проекта, SWOT-анализ, диаграмма Ганта, управление рисками, версионирование, виды проектов; работа с заказчиком и экспертами</td><td>Защищённый проект с полным комплектом документации, выдвинутый на всероссийский конкурс</td><td><a href="https://bigchallenges.ru" target="_blank">bigchallenges.ru</a> (Сириус) · <a href="https://ntcontest.ru" target="_blank">ntcontest.ru</a> · Краевой НПК</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <hr>
+  <h2 style="font-size:1.1rem; margin:1.5rem 0 .6rem;">Контакты руководства</h2>
+  <p><b>Заведующий сектором технических лабораторий:</b> Казакевич Константин Михайлович<br>
+  <b>Номер телефона:</b> 8–913–573–47–80<br>
+  <b>Адрес электронной почты:</b> Lotmel@mail.ru<br>
+  <b>Площадки проведения занятий:</b> КГАОУ «Школа космонавтики имени академика С.П. Королёва» (г. Железногорск, ул. Красноярская, д. 36), региональный центр «Спутник»</p>
+</div>
+</body>
+</html>
